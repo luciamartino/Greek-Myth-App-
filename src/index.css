@@ -1,0 +1,108 @@
+:root{
+    --text-brown: #833E15;
+    --background-yellow: #CD791F;
+    --slightly-darker-yellow: #AE5D0E;
+    --red: #941701;
+    --darker-red: #6F160E;
+    --darker-darker-red: #370002;
+    --light: #DEC1A1;
+    --very-light: #F8F0DD;
+}
+
+body{
+    width: 800px;
+    height: 700px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-yellow);
+    border: 2px solid var(--darker-darker-red);
+    padding: 15px;
+}
+
+.prevnext {
+    margin: 5px;
+}
+
+.prevnext button{
+    color: var(--darker-darker-red);
+    background-color: var(--red);
+}
+
+.prevnext button:disabled{
+    opacity: 50%;
+}
+
+.prevnext button:disabled:hover{
+    color: var(--darker-darker-red);
+    background-color: var(--red);
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.prevnext button:hover{
+    color: #941701;
+    background-color: #370002;
+}
+
+.answers button{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--text-brown);
+    color: var(--light);
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25px 25px;
+
+
+}
+
+.answers button:hover{
+    background-color: var(--light);
+    color: var(--text-brown-);
+}
+
+.question{
+    white-space: normal;  /* allow wrapping */
+    word-wrap: break-word; /* break long words */
+    overflow-wrap: break-word;
+    max-width: 650px;
+    color: var(--darker-darker-red);
+}
+
+.answers-button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid var(--darker-darker-red);
+}
+
+.correct-answer{
+    background-color: var(--light);
+    color: var(--text-brown-);
+}
+
+.wrong-answer{
+    background-color: var(--light);
+    color: var(--text-brown-);
+    opacity: 30%;
+    cursor: not-allowed;
+}
