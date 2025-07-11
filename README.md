@@ -1,1 +1,1 @@
-# Greek-Myth-App-
+#Greek Mythology App
